@@ -1,0 +1,21 @@
+header{
+    background-color: rgb(246, 134, 214);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 15px ;
+}
+header ul li a{
+    padding: 15px;
+    text-decoration: none;
+    color:  rgb(89, 0, 83);
+    border: 1px solid hotpink;
+}
+header h1{
+    color: rgb(89, 0, 83);
+}
