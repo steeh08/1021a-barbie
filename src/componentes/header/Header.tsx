@@ -3,8 +3,8 @@ import Link from './../link/Link'
 function Header(){
     return(
         <header>
-            <div>
-                <h1>Logo</h1>
+            <div className='my-title'>
+                <h1>DISNEY</h1>
             </div>
             <nav>
                 <ul>

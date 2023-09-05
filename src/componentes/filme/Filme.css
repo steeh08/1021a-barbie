@@ -10,6 +10,17 @@
     width: 100%;
     height: auto;
 }
+.foto-filme{
+    min-height: 460px;
+    display: flex;
+    align-items: center;
+}
+.foto-filme>img{
+    max-height: 460px;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
 .sinopse{
     text-align: justify;
     font-weight: 400;
