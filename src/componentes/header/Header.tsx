@@ -4,7 +4,7 @@ function Header(){
     return(
         <header>
             <div className='my-title'>
-                <h1>DISNEY</h1>
+                <h1>FilmeLand</h1>
             </div>
             <nav>
                 <ul>
