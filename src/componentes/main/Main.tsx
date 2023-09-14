@@ -13,17 +13,22 @@ export default function Main(){
     const [texto,setTexto]=useState("Barbie")
     const filmes =[
             {
+            id:1,
             titulo:'Barbie',
             sinopse:'Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.',
             imagem:'/barbie.png'
             },
             {
+            id:2,
             titulo:'A Bela Adormecida',
             sinopse:'Ciumenta e vingativa a fada Malévola lança um feitiço cruel sobre a princesa Aurora no dia do seu nascimento. Aurora está condenada a cair em um sono profundo quando completar 16 anos de idade e, para despertar novamente, sua única salvação seria um beijo de seu verdadeiro amor. As três fadas bondosas, Flora, Fauna e Primavera tentam evitar a profecia do mal, mas não conseguem. Agora só resta ao príncipe Felipe enfrentar Malévola e salvar a princesa.',
             imagem:'/Abelaadormecida.webp'
             },
             {
-                
+            id:3,
+            titulo:'Ken',
+            sinopse:'Lançado em 1961 pela Mattel, o boneco Ken era o resumo do garoto americano da casa ao lado. Bem cuidado,atlético e com um corte de cabelo alinhado, ele era a contraparte perfeita de sua namorada mais famosa, Barbie.',
+            imagem: '/KEN.webp'
             }
 
     ]
@@ -45,11 +50,21 @@ export default function Main(){
        
         <main className="content-main">
             {
-                /*Use algo do vetor para tentar criar filmes*/ 
+                /*Use algo do vetor para tentar criar filmes*/
             }
+             {
+                    filmes.filter((filme)=>filme.titulo.toLowerCase().includes(texto)).map(
+                        (filme)=>
+                            <Filme 
+                                key={filme.id}
+                                sinopse={filme.sinopse}
+                                titulo={filme.titulo}
+                                imagem={filme.imagem}
+                            />
+                    )
+                }
 
-
-            <Filme titulo='Barbie'
+           {/** <Filme titulo='Barbie'
             sinopse='Depois de ser expulsa da Barbieland por ser uma boneca 
             de aparência menos do que perfeita, Barbie parte 
             para o mundo humano em busca da verdadeira felicidade.'
@@ -96,7 +111,7 @@ export default function Main(){
             sinopse='Depois de ser expulsa da Barbieland por ser uma boneca 
             de aparência menos do que perfeita, Barbie parte 
             para o mundo humano em busca da verdadeira felicidade.'
-            imagem='/barbie.png'/>
+        imagem='/barbie.png'/>**/}
         </main>
         </>
     )
