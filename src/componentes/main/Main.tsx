@@ -1,11 +1,12 @@
+import axios from 'axios'
 import { useState} from 'react'
 import Filme from './../filme/Filme'
 import './Main.css'
-type FilmeType ={
-    id:number,
-    titulo:string,
-    sinopse:string,
-    imagem:string
+type FilmeType = {
+    id : number,
+    titulo : string,
+    sinopse : string,
+    imagem : string
 }
 export default function Main(){
     //let textodigitado = 'Barbie'

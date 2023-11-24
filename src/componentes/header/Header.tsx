@@ -12,13 +12,13 @@ function Header(){
                         <LinkNav url="/" texto='Home'/>
                     </li>
                     <li>
-                        <LinkNav url="/notícias" texto='Notícias'/>
+                        <LinkNav url="/Notícias" texto='Notícias'/>
                     </li>
                     <li>
-                        <LinkNav url="/sobre" texto='Sobre'/>
+                        <LinkNav url="/Sobre" texto='Sobre'/>
                     </li>
                     <li>
-                        <LinkNav url="/contato" texto='Contato'/>
+                        <LinkNav url="/Contato" texto='Contato'/>
                     </li>
                 </ul>
             </nav>
